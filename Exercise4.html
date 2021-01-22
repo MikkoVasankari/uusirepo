@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 25% 75%;
+            grid-template-rows: 150px 100% 100px;
+            grid-template-areas: 
+            "header header header"
+            "navbar article article"
+            "footer footer footer";
+        }
+        .header{
+            color: whitesmoke;
+            grid-area: header;
+            display: flex;
+            background-color:blue;
+        }
+        .header > h1{
+            font-size: 50px;
+            margin: auto;
+        }
+        .navbar{
+            grid-area: navbar;
+            background-color:yellow;
+        }
+        .navbar > ul{
+            list-style: none;
+            padding: 1em;
+        }
+        .article{
+            grid-area: article;
+            background-color: whitesmoke;
+            padding: 10px;
+        }
+        article > p{
+            float: left;
+        }
+        .footer{
+            grid-area: footer;
+            display: flex;
+            background-color: black;
+            color: whitesmoke;
+        }
+        .footer > footer{
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                Header
+            </h1>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li> <a href="link">Link1</a> </p></li>
+                <li> <a href="link">Link2</a> </p></li>
+                <li> <a href="link">Link3</a> </p></li>
+            </ul>
+        </div>
+        <div class="article">
+            <article>
+                <h2>Article Title</h2>
+                <p> Some random text </p>
+                <img src="images/toimiipepe.png">
+            </article>
+        </div>
+        <div class="footer">
+            <footer>
+                Footer
+            </footer>
+        </div>
+    </div>
+
+</body>
+</html>
