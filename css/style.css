@@ -4,9 +4,11 @@
     margin-right:15%;
     width: 70%;
 }
+
 .content > a:hover{
     color: blueviolet;
 }
+
 .footer{
     display: flex;
     background-color:grey;
@@ -15,16 +17,18 @@
     height: 100px;
     margin-top: 5px;
 }
+
 .footer > footer{
     margin: auto;
 }
+
 form {
     margin-top: 5px;
     margin-left: 15%;
-    margin-right:15%;
+    margin-right: 15%;
     width: 70%;
 }
-.table{
-    margin-right:25%;
-    width: auto;
+
+.table {
+    width: 50%;
 }
